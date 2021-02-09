@@ -19,10 +19,10 @@ include:
 locale                   : "en-US"
 title                    : "Reddit (Mis)Information"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Data Science Capstone Project" # site tagline that appears below site title in masthead
 name                     : "Helen C, Hasan L, Cindy H"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Reddit Misinformation"
+url                      : "https://helenhc.github.io/reddit-site/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -95,10 +95,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Capstone Group 2"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "By: Helen, Hasan, Cindy"
+  avatar           : "/images/ucsd.jpeg"
   bio              : "A project dedicated to looking at the spread of misinformation online."
-  location         : "San Diego, CA"
+  location         : "UC San Diego"
   email            :
   links:
     - label: "Email"
