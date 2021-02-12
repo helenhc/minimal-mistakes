@@ -127,8 +127,10 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    width: 200px;
+    height: 150px; 
+    background-position: right;
+    // border-radius: 70%;
 
     @include breakpoint($large) {
       padding: 5px;
@@ -172,6 +174,7 @@
 
 .author__bio {
   margin: 0;
+  font-style: italic;
 
   @include breakpoint($large) {
     margin-top: 10px;
