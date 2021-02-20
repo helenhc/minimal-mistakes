@@ -6,5 +6,5 @@ main:
      url: /research/
    - title: "Visualizations"
      url: /visualizations/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+   - title: "Conclusion"
+     url: /conclusion/
