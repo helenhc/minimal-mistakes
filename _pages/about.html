@@ -1,7 +1,8 @@
 ---
-title: "Analying Subreddits"
+title: "About"
 layout: single
 tags:
+classes: wide
 permalink: /about/
 ---
  
@@ -58,14 +59,56 @@ permalink: /about/
             <li>date of post</li>
             <li>subreddit that this post belongs in</li>
         </ul>
-
-        //images go here
     </p>
-    
-</html>
+    <img src = "../images/dataset_1.png" alt = "Number of Posts in each Category" ALIGN = "left" class = "left" width="500" height="333"/>
+    There are about 1 million rows collected for the politics category, about 1.2 million comments collected from the science category, and only about 185 thousand rows from the myth category. The data is heavily skewed towards the politics and science categories because the subreddits from these categories are much more popular compared to the ones from myth.
+</br>
+</br>
+    <img src = "../images/dataset_2.png" alt = "Average Proportion of One-Time Posters" ALIGN = "left" class = "left" width="500" height="333"/>
+    This chart shows the proportion of users who only posted once in a subreddit. This shows the proportion of users who are only “visitors” of a subreddit as opposed to a regular of a subreddit. This chart was produced by taking the proportion of one-time posters in each of the subreddits individually and then took the average of all the subreddits in that category.
+    This chart shows us that a little more than half the posters in the science and myth categories are one-time posters only. However, in the politics category, only 46% of the posters are visitors. This means that the users in the politics category are more likely to frequent the same subreddits compared to the users in the science and myth categories.
+</br>
+</br>
+    <img src = "../images/dataset_3.png" alt = "Average Number of Posts" ALIGN = "left" class = "left" width="500" height="333"/>
+    In this chart, we can see that in the politics category, a user on average writes about 9 posts, while on average a user makes about 4 and 5 posts in the science and myth categories. The high average number of posts in the politics category compared to the other two categories leads us to believe that users in this category are more likely to be a regular user of a subreddit. This may indicate echo chambers.</html>
+</br>
+</br>
+
+<div class = "row"> 
+    <div class = "column"> 
+        <img src = "../images/dataset_4.png" alt = "Number of Posts in Politics" ALIGN = "left" class = "resize"/>
+        <img src = "../images/dataset_6.png" alt = "Number of Posts in Myth" class = "resize"/>
+        <img src = "../images/dataset_5.png" alt = "Number of Posts in Science" ALIGN = "right" class = "resize"/>
+    </div>
+</br>
+    <p>The graphs above are the number of comments collected per subreddit in the Politics, Myth, and Science categories respectively.
+    This showcases the more "popular" subreddits in each category, like <i>r/tucker_carlson</i> in the political subreddits, 
+    <i>r/aliens</i> in the myth subreddits, and <i>r/science</i> in the science subreddits. </p>
+
+</div>
+
 <style>
     ul {
         margin: auto; 
         width: 70%;
     }
+
+    .left { 
+    float: left; 
+    padding: 0 10px 0 0; 
+    }
+
+    .right { 
+        float: right; 
+        padding: 0 0 0 10px; 
+    }
+    
+    .resize { 
+        width: 33.33%;
+    }
+
+    .annotation { 
+        width: 50%;
+    }
+
 </style>

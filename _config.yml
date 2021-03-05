@@ -18,7 +18,7 @@ include:
 # Site Settings
 locale                   : "en-US"
 title                    : "Reddit (Mis)Information"
-title_separator          : "-"
+title_separator          : 
 subtitle                 : "Data Science Capstone Project" # site tagline that appears below site title in masthead
 name                     : "Helen C, Hasan L, Cindy H"
 description              : "Reddit Misinformation"
@@ -99,11 +99,11 @@ author:
   avatar           : "/images/ucsd.jpeg"
   bio              : "A project dedicated to looking at the spread of misinformation online."
   location         : "UC San Diego"
-  email            :
+  email            : "hwchung@ucsd.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "hwchung@ucsd.edu"
+      #url: "hwchung@ucsd.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
