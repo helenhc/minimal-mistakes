@@ -21,22 +21,60 @@ permalink: /research/
     misinformation, urban myth misinformation, and scientific information. 
     User polarity would then define how often a user interacts with the other two 
     subreddit categories. 
+</br> </br>
+
+    These visualizations are showing the user polarities for all three categories that we had picked out. 
+    The y axis is the percentage of intersection, so this is telling us how often a user has posted in that 
+    specific category of subreddits. For example, if a user has 0 percent of intersection in the myth subreddits, 
+    this would tell us that this user has never posted in the myth subreddits before. And 100% would be the opposite, 
+    where all of the user’s posts have been dedicated just towards myth subreddits only, and has never posted in 
+    science or political subreddits. Somewhere in the middle, let's say 40% intersection in myth, would mean that a 
+    user has posted 40% of their total posts in the myth section, and for example, 30% in science and 30% in politics. 
+    The user polarities of all three categories add up to 100% per user. 
+    The x axis is just the frequency, or the amount of users. 
+</br> </br>
+    <p>User polarity is calculated by the following: </p>
+    <center><div class="All">
+        <div class="Sum"></div>
+        <span class="Fraction">
+            <span class="Numerator"> # of Posts in (Political/Myth/Science) Subreddits</span>
+            <span class="Denominator">Total # of Posts</span>
+        </span>
+    </div>
+    </center>
 </p>
 </br> 
-
+<img src = "../images/myth.png" alt = "Myth User Polarity Histogram" ALIGN = "left" class = "left" width="500" height="333"/> 
+<p>These are the user polarities for myth subreddits. Myth has the least amount of posts per user. As you can see, 
+    they have the least intersection out of the three categories that we had picked out, with an overwhelming majority
+    of Reddit users in our data set having never posted in myth subreddits before. This isn’t too surprising, as we 
+    looked at subreddits like Sasquatch, alien sightings, and Bigfoot. It’s a fairly small community of Reddit users,
+    so this was somewhat expected. 
+</p>
 
 <img src = "../images/politics.png" alt = "Politics User Polarity Histogram" ALIGN = "left" class = "left" width="500" height="333"/>
-<p> This is showing specifically at the political misinformation category of subreddits we examined. The x-axis goes from a range of 0% - 100%, 
-    indicating the percentage of ...  </p>
+<p> These are the user polarities for political subreddits. The findings for the 
+    political subreddits are similar to that of the myth one, just on a smaller scale. The majority of users haven’t 
+    ever posted in a political subreddit before, but there is a larger amount of users who have dedicated all of their
+    comments to political discussions compared to that of the myth subreddit we looked at. This was surprising, as we
+    would expect for there to be a larger political discussion, especially since we had gathered data from March to 
+    June of last year, which was right before the 2020 presidential election.  
+</p>
 </br>
 
-<img src = "../images/myth.png" alt = "Myth User Polarity Histogram" ALIGN = "right" class = "right" width="500" height="333"/> 
-<p> </p>
-
 <img src = "../images/science.png" alt = "Science User Polarity Histogram" ALIGN = "left" class = "left" width="500" height="333"/> 
-<p> </p>
+<p>And lastly, the science subreddit had the most versatile user base out of the three that we have seen. 
+    It is the opposite of the two categories we had previously looked at, where there are more users who have dedicated all their posts to science subreddits than users with 0 
+    posts in the science section. There are also more of a variety of users who are mixed, as you can see in the 60% 
+    region. This finding was also somewhat surprising, as we had thought there would have been more users along the 
+    middle rather than in the extremes at 0% and 100%, since topics like scientific findings aren’t too polarizing. 
+</p>
 
 <img src = "../images/all_polarity.png" alt = "All User Polarity Histogram" ALIGN = "right" class = "right" width="500" height="333"/> 
+This is a graph showcasing all of the three categories we picked out. We can directly see the differences between 
+each kind of content on Reddit. Again, to summarize, political and myth subreddits are very similar in terms of how 
+the users in these respective subreddits act, while users in science subreddits act quite differently than what we 
+would see in political and myth users. 
 
 
 
@@ -52,5 +90,26 @@ permalink: /research/
 .right { 
     float: right; 
     padding: 0 0 0 10px; 
+}
+.All {
+    display: table-row;
+    text-align: center; 
+}
+.Sum {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; 
+}
+.Fraction {
+    display: table-cell;
+    text-align: center;    
+}
+.Denominator{
+    border-top: 1px solid #000;
+    display: block;
+}
+.Fraction, .Numerator, .Denominator {
+    padding: 0px 5px;
+    text-align: center;    
 }
 </style>

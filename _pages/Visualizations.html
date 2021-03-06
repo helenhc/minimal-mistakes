@@ -4,5 +4,67 @@ layout: single
 tags:
 permalink: /visualizations/
 classes: wide
-
 ---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<p>
+    After calculating user polarities, we went on to do the following: 
+    <ul>
+        <li>Visualize the number of shared users between any two subreddits in heatmap </li>
+        <li>Visualize the average user polarities of the shared users between any two subreddits in another heatmap </li>
+    </ul>
+</p>
+
+<img src = "../images/count_chart.png" alt = "Count Chart" width="75%" height="75%"/>
+</br>
+
+<p class = "annotation"> This is a heatmap showing the the percentage of common users who exist between subreddit X and Y, 
+which is calculated using the equation: </p>
+
+<center><div class="All">
+    <div class="Sum"></div>
+    <span class="Fraction">
+        <span class="Numerator">number of shared users</span>
+        <span class="Denominator">total users between the subreddits</span>
+    </span>
+</div>
+</center>
+</br> 
+<img src = "../images/science-myth.png" alt = "Science-Myth Chart" width="75%" height="75%"/>
+<p class = "annotation"> This heatmap is showing the average myth polarity of the common users between subreddit X and Y.
+</p>
+<img src = "../images/science-politics.png" alt = "Science-Myth Chart" width="75%" height="75%"/>
+<p class = "annotation"> This heatmap is showing the average political misinformation polarity of the common users between subreddit X and Y.
+</p>
+<style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.All {
+    display: table-row;
+    text-align: center; 
+}
+.Sum {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; 
+}
+.Fraction {
+    display: table-cell;
+    text-align: center;    
+}
+.Denominator{
+    border-top: 1px solid #000;
+    display: block;
+}
+.Fraction, .Numerator, .Denominator {
+    padding: 0px 5px;
+    text-align: center;    
+}
+.annotation { 
+    text-align: center; 
+}
+
+</style>
